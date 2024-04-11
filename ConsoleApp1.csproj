@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Lennox.LibYuvSharp" Version="1.1.2" />
+		<PackageReference Include="System.Drawing.Common" Version="8.0.3" />
+		<PackageReference Include="CppSharp" Version="1.1.5.3168" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Update="vpx.dll">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+</Project>
